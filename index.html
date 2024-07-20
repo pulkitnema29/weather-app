@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <form id="search-form">
+        <input type="Search" class="form-control" placeholder="Enter City Name" id="search-city" required
+            autocomplete="off" aria-label="City Search" aria-describedby="search-button">
+        <button id="search-button">Search</button>
+        
+    </form>
+    <div id="current-weather">
+        <h3 class="city-name" id="current-city" style="text-align: center;"></h3>
+    </div>
+    <div class="container">
+        <div class="current-info">
+
+            <div class="date-container">
+                <div class="time" id="time">
+                    12:30 <span id="am-pm">PM</span>
+                </div>
+                <div class="date" id="date">
+                    Monday, 25 May
+                </div>
+
+                <div id="current-weather">
+                    <h3 id="current-city"></h3>
+
+                </div>
+                <div class="others" id="current-weather-items">
+                    <div class="current">
+                        <div><p style="display: flex;
+                            justify-content: space-between;">Humidity <span id="humidity"></span> </p></div>
+                    </div>
+                    <div class="current">
+                        <div><p style="display: flex;
+                            justify-content: space-between;">UV index <span id="uv-index"></span> </p></div>
+                    </div>
+                    <div class="current" >
+                        <div><p style="display: flex;
+                            justify-content: space-between;">wind-speed <span id="wind-speed"></span> </p> </div>
+                    </div>
+                    <div class="current">
+                        <div><p style="display: flex;
+                            justify-content: space-between;">Temperature <span id="temperature"></span></p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="place-container">
+                <div class="time-zone" id="time-zone">Asia/Kolkata</div>
+                <div id="country" class="country">IN</div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="future-forecast">
+        <div class="today" id="current-temp">
+            <div class="other">
+                <div id="fDate0"></div>
+                <p id="fImg0"></p>
+                <div><p>Temp: <span id="fTemp0"></span></p></div>
+                <div><p>Humidity: <span id="fHumidity0"></span></p></div>
+            </div>
+        </div>
+
+        <div class="weather-forecast" id="weather-forecast">
+            <div class="weather-forecast-item">
+                <div id="fDate1"></div>
+                <p id="fImg1"></p>
+                <div><p>Temp: <span id="fTemp1"></span></p></div>
+                <div><p>Humidity: <span id="fHumidity1"></span></p></div>
+            </div>
+            <div class="weather-forecast-item">
+                <div id="fDate2"></div>
+                <p id="fImg2"></p>
+                <div><p>Temp: <span id="fTemp2"></span></p></div>
+                <div><p>Humidity: <span id="fHumidity2"></span></p></div>
+            </div>
+            <div class="weather-forecast-item">
+                <div id="fDate3"></div>
+                <p id="fImg3"></p>
+                <div><p>Temp: <span id="fTemp3"></span></p></div>
+                <div><p>Humidity: <span id="fHumidity3"></span></p></div>
+            </div>
+            <div class="weather-forecast-item">
+                <div id="fDate4"></div>
+                <p id="fImg4"></p>
+                <div><p>Temp: <span id="fTemp4"></span></p></div>
+                <div><p>Humidity: <span id="fHumidity4"></span></p></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
